@@ -20,7 +20,7 @@ const { response } = require('express');
 
 //start server
 const app = express();
-const port = 3500;
+const port = process.env.PORT || 5000
 
 //session info
 app.use(session({
