@@ -6,12 +6,5 @@
     "express-session": "^1.17.3",
     "sqlite3": "^5.1.4"
   }
-  
-  "scripts": {
-  "start": "npm-run-all -p watch-css start-js",
-  "build": "npm run build-css && react-scripts build",
-  "watch-css": "npm run build-css && node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/ --watch --recursive",
-  "build-css": "node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/",
-  "start-js": "react-scripts start"
-}
+ 
 }
